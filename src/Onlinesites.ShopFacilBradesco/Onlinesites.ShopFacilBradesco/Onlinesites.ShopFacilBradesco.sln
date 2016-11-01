@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onlinesites.ShopFacilBradesco", "Onlinesites.ShopFacilBradesco.csproj", "{876022FA-DF24-4A05-9586-F76F7C844D7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testes", "..\Testes\Testes.csproj", "{AC29BB1A-95D4-4873-B14B-BC3DCBFC21CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{876022FA-DF24-4A05-9586-F76F7C844D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{876022FA-DF24-4A05-9586-F76F7C844D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{876022FA-DF24-4A05-9586-F76F7C844D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{876022FA-DF24-4A05-9586-F76F7C844D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC29BB1A-95D4-4873-B14B-BC3DCBFC21CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC29BB1A-95D4-4873-B14B-BC3DCBFC21CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC29BB1A-95D4-4873-B14B-BC3DCBFC21CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC29BB1A-95D4-4873-B14B-BC3DCBFC21CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
