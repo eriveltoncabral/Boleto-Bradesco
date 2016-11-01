@@ -5,6 +5,12 @@
 
 Esta biblioteca foi desenvolvido para facilitar a integração com o serviço de boletos para e-commerce do Bradesco 
 
+## Uso via Nuget
+Instalar utilizando nuget
+```
+Install-Package Onlinesites.ShopFacilBradesco
+```
+
 ## Exemplo de uso
 
 ```csharp
