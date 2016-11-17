@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Onlinesites.ShopFacilBradesco.Utils
 {
@@ -175,10 +176,31 @@ namespace Onlinesites.ShopFacilBradesco.Utils
             return reg.IsMatch(ip);
         }
 
+        /// <summary>
+        /// Valida o número do pedido
+        /// </summary>
+        /// <param name="numeroPedido"></param>
+        /// <returns></returns>
         public static bool IsValidNumeroPedido(string numeroPedido)
         {
             var reg = new Regex("(^[A-Za-z0-9\\._]*\\d+[A-Zaz0-9\\._-]*$)");
             return reg.IsMatch(numeroPedido);
+        }
+
+        /// <summary>
+        /// Cria o número do pedido
+        /// </summary>
+        /// <param name="pedidoId">Id do pedido </param>
+        /// <param name="boletoNumero">número da versão do boleto para o pedido</param>
+        /// <param name="letra1">Primeira letra</param>
+        /// <param name="letra2">Segunda letra</param>
+        /// <returns>Exemplo de retorno: P8976_A98</returns>
+        public static string GerarNumeroPedido(long pedidoId, long boletoNumero, string letra1 ="P", string letra2 = "O")
+        {
+            var pedidoStr = new string(pedidoId.ToString("0000").Take(4).ToArray());
+            var boletoNumeroStr = new string(boletoNumero.ToString("00").Take(2).ToArray());
+
+            return $"{letra1}{pedidoStr}_{letra2}{boletoNumeroStr}";
         }
     }
 }

@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 using Onlinesites.ShopFacilBradesco.Excecoes;
 using Onlinesites.ShopFacilBradesco.Models.Requisicao;
 using Onlinesites.ShopFacilBradesco.Models.Resposta;
-using RestSharp;
+
 
 
 namespace Onlinesites.ShopFacilBradesco.Api
@@ -42,7 +42,7 @@ namespace Onlinesites.ShopFacilBradesco.Api
             UrlRequisicao = IsHomologacao ? UrlHomologacao : UrlProducao;
         }
 
-        #region descontinuado
+        
         
         /// <summary>
         /// Faz a solicitação junto a API do Bradesco.
@@ -105,6 +105,6 @@ namespace Onlinesites.ShopFacilBradesco.Api
 
             return resposta;
         }
-        #endregion
+        
     }
 }

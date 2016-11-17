@@ -137,9 +137,6 @@ namespace Testes
             Assert.AreEqual("OPERACAO REALIZADA COM SUCESSO", objetoValidado.Status.Mensagem);
             Assert.IsNull(objetoValidado.Status.Detalhes);
 
-
-
-
         }
 
         

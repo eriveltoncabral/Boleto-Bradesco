@@ -6,6 +6,9 @@ using System.Collections.Generic;
 
 namespace Onlinesites.ShopFacilBradesco.Models.Requisicao
 {
+    /// <summary>
+    /// Informações do cedente
+    /// </summary>
     public class BoletoConfigRequisicao : IModelo
     {
         /// <summary>
