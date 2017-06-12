@@ -56,9 +56,9 @@ namespace Onlinesites.ShopFacilBradesco.Models.Requisicao
                 throw new Exception("Campo Documento do comprador não pode estar vazio");
             }
             int documentoInt;
-            if (int.TryParse(Documento, out documentoInt))
+            if (!int.TryParse(Documento, out documentoInt))
             {
-                throw new Exception("Campo Documento dcomprador deve conter apenas números");
+                throw new Exception("Campo Documento do comprador deve conter apenas números");
             }
 
             if (!Helpers.IsValidCnpj(Documento) && !Helpers.IsValidCpf(Documento))

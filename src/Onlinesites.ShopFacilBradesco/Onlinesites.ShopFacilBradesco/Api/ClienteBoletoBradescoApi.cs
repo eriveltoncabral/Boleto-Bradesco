@@ -28,7 +28,8 @@ namespace Onlinesites.ShopFacilBradesco.Api
         private const string UrlProducao = "https://meiosdepagamentobradesco.com.br/api/";
 
         private const string _mediaType = "application/json";
-        private const string _charSet = "UTF-8";
+        private const string _charSet = "UTF-8";
+
         /// <summary>
         /// Inicia o objeto de Cliente API
         /// </summary>
@@ -78,7 +79,8 @@ namespace Onlinesites.ShopFacilBradesco.Api
             String headerBase64 = Convert.ToBase64String(Encoding.UTF8.GetBytes(header));
             req.Headers.Add(HttpRequestHeader.Authorization, "Basic " + headerBase64);
             req.GetRequestStream().Write(data, 0, data.Length);
-            var response = (HttpWebResponse)req.GetResponse();
+            var response = (HttpWebResponse)req.GetResponse();
+
             if (response == null || response.StatusCode != HttpStatusCode.OK && response.StatusCode != HttpStatusCode.Created)
             {
                 throw new BoletoApiException
