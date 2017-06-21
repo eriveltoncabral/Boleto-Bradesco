@@ -19,7 +19,7 @@
   <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
   <PropertyGroup Label="Configuration">
     <Id>Onlinesites.ShopFacilBradesco</Id>
-    <Version>1.0.10</Version>
+    <Version>1.0.12</Version>
     <Title>Boleto Bradesco ShopFacil</Title>
     <Authors>Onlinesites</Authors>
     <Owners>Onlinesites</Owners>
